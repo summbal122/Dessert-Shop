@@ -1,8 +1,11 @@
+import Header from "./src/components/Header";
+import Body from "./src/components/Body";
 const App = () => {
   return (
     <main>
-      <h1>Welcome to the Dessert Shop 🍩</h1>
-      <p>Explore our delicious treats!</p>
+      <Header/>
+      <Body/>
+     
     </main>
   );
 };
