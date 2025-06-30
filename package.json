@@ -1,0 +1,42 @@
+{
+  "name": "dessert-shop",
+  "version": "1.0.0",
+  "description": "dessert shop",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/summbal122/Dessert-Shop.git"
+  },
+  "keywords": [
+    "donut",
+    "sweets"
+  ],
+  "author": "sumbal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/summbal122/Dessert-Shop/issues"
+  },
+  "homepage": "https://github.com/summbal122/Dessert-Shop#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.3",
+    "react-scroll": "^1.9.3",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ]
+}
