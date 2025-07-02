@@ -98,7 +98,7 @@ const DessertsSection = () => {
               {item.title}
             </h2>
             <p className="text-[8px] md:text-xs lg:text-md 2xl:text-2xl mb-8 2xl:mb-10">{item.desc}</p>
-            <span className="absolute bottom-2 right-2 2xl:bottom-4 2xl:right-4 bg-secondary px-2 2xl:px-3.5 2xl:py-1.5 py-0.5 rounded-md text-primary font-semibold text-end text-xs md:text-sm 2xl:text-3xl">
+            <span className="absolute bottom-2 right-2 2xl:bottom-4 2xl:right-4 bg-secondary px-2 2xl:px-3.5 2xl:py-1.5 py-0.5 rounded-md text-primary font-semibold text-end text-xs md:text-sm 2xl:text-3xl cursor-pointer">
             +</span> 
           </div>
         ))}
