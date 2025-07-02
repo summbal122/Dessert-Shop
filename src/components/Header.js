@@ -1,23 +1,27 @@
+import { Link } from "react-scroll";
 import LOGO_IMG from "../../images/logo.png";
 import { useState } from "react";
+
 const Header = () => {
   const [showOptions, setShowOptions] = useState(false);
   const handleShowOptions = () => {
     setShowOptions(!showOptions);
   }
   return (
-    <div>
+    <div className="absolute z-70 top-3 md:top-2 2xl:top-6 w-full">
        <div className="hidden md:block">
-        <div className="flex w-full justify-center z-80">
-          <div className="w-10/12 lg:w-8/12 flex items-center justify-around shadow-2xl bg-primary absolute z-40 top-6 lg:py-0.5 rounded-md 2xl:rounded-xl">
+        <div className="flex  justify-center">
+          <div className="w-10/12 lg:w-8/12 flex items-center justify-around shadow-2xl bg-primary py-0.5 rounded-md 2xl:rounded-xl">
             <img className="w-14 2xl:w-36" alt="logo" src={LOGO_IMG}/>
 
-            <ul className=" text-purple-text flex gap-4 2xl:gap-8 text-xs lg:text-sm 2xl:text-3xl">
-              <li className="hover:cursor-pointer hover:font-bold">Home</li>
-              <li className="hover:cursor-pointer hover:font-bold">Desserts</li>
-              <li className="hover:cursor-pointer hover:font-bold">Specials</li>
-              <li className="hover:cursor-pointer hover:font-bold">About Us</li>
-              <li className="hover:cursor-pointer hover:font-bold">Contact</li>
+            <ul className=" text-purple-text font-Doppio flex gap-4 2xl:gap-8 text-xs lg:text-sm 2xl:text-3xl">
+              <li className="hover:cursor-pointer hover:font-semibold">Home</li>
+              <li className="hover:cursor-pointer hover:font-semibold">Desserts</li>
+              <li className="hover:cursor-pointer hover:font-semibold">Contact</li>
+              <li className="hover:cursor-pointer hover:font-semibold">About Us</li>
+              <li className="hover:cursor-pointer hover:font-semibold animate-pulse text-secondary"><Link
+              smooth={true} duration={800}  
+              to="new-items">New!</Link> </li>
             </ul>
             <i className="fa-solid fa-cart-shopping text-secondary text-lg 2xl:text-4xl hover:cursor-pointer "></i>
       </div>
@@ -25,8 +29,8 @@ const Header = () => {
     </div>
     {/* Header for mobile screens */}
       <div className="block md:hidden">
-        <div className="flex justify-center border-6 ">
-          <div className="w-5/6 flex items-center justify-between shadow-2xl bg-primary absolute z-40 top-6 rounded-md px-4 md:px-0 ">
+        <div className="flex justify-center  ">
+          <div className="w-5/6 flex items-center justify-between shadow-2xl bg-primary rounded-md px-4 ">
             <img className="w-10 md:w-14 2xl:w-28" alt="logo" src={LOGO_IMG}/>
           
          
@@ -39,12 +43,13 @@ const Header = () => {
              className="fa-solid fa-bars text-purple-text "></i>
              </div>
              {showOptions && 
-             ( <ul className="absolute top-11 right-0.5 bg-primary text-purple-text  p-4 rounded-md w-2/6 flex flex-col  gap-3  text-xs">
-              <li className="hover:cursor-pointer hover:font-bold">Home</li>
-              <li className="hover:cursor-pointer hover:font-bold">Desserts</li>
-              <li className="hover:cursor-pointer hover:font-bold">Specials</li>
-              <li className="hover:cursor-pointer hover:font-bold">About Us</li>
-              <li className="hover:cursor-pointer hover:font-bold">Contact</li>
+             ( <ul className="absolute top-11 right-0.5 bg-primary text-purple-text p-4 rounded-md w-2/6 flex 
+             flex-col gap-3 text-xs">
+              <li className="hover:cursor-pointer hover:font-semibold">Home</li>
+              <li className="hover:cursor-pointer hover:font-semibold">Desserts</li>
+              <li className="hover:cursor-pointer hover:font-semibold">Specials</li>
+              <li className="hover:cursor-pointer hover:font-semibold">About Us</li>
+              <li className="hover:cursor-pointer hover:font-semibold">Contact</li>
             </ul> )}
            </div>
         

@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Doppio+One&family=Edu+SA+Hand:wght@400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Doppio+One&family=Edu+SA+Hand:wght@400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Doppio+One&family=Edu+SA+Hand:wght@400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
 @theme {
       --color-primary: #f4f0f0;
       --color-secondary: #a01c83;
       --color-main: #f3dfdf;
-      --color-purple-text: #5a607e
-
-;
+      --color-light-blue: #E5EFF1;
+      --color-purple-text: #5a607e;
+      --font-Pacifico: "Pacifico", "cursive";
+      --font-Doppio: "Doppio One", sans-serif;
+      --font-Lobster: "Lobster Two", sans-serif;
+      --font-Cookie: "Edu SA Hand", cursive;
+      
 }

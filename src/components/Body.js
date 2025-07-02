@@ -1,9 +1,13 @@
-import MainSection from "./MainSection"
-
+import MainSection from "./MainSection";
+import NewItemsSection from "./NewItemsSection";
+import DessertsSection from "./DessertsSection";
 const Body = () => {
   return (
     <div>
       <MainSection/>
+      <NewItemsSection/>
+      <DessertsSection/>
+      
     </div>
   )
 }
