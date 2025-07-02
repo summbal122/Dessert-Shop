@@ -1,7 +1,7 @@
 import IMG from "../../images/chef.png"
 const OurStorySection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4  bg-main p-10 px-5 lg:px-20 2xl:px-30 place-items-center ">
+    <div className="grid grid-cols-1 md:grid-cols-4  bg-main/80 p-10 px-5 lg:px-20 2xl:px-30 place-items-center ">
      
      <img className="w-36 md:w-lg 2xl:w-2xl col-span-2 "   src={IMG}/>
       <div className="flex flex-col items-center gap-4 col-span-2">

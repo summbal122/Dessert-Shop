@@ -89,7 +89,7 @@ const desserts = [
 const DessertsSection = () => {
   return (
     <div className="py-6 px-3 md:p-5 lg:p-15 flex flex-col items-center gap-5 lg:gap-14 2xl:gap-15">
-      <h1 className="text-lg lg:text-3xl 2xl:text-5xl font-bold font-Doppio text-secondary">Explore Desserts</h1>
+      <h1 className="text-lg lg:text-3xl 2xl:text-5xl font-semibold font-Cookie text-pink-700">Explore Desserts</h1>
       <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3 md:gap-5 2xl:gap-8 ">
         {desserts.map((item, index) => (
           <div key={index} className="bg-light-blue relative p-2 lg:p-4 2xl:p-8 rounded-xl text-center place-items-center shadow-xl">
@@ -98,7 +98,7 @@ const DessertsSection = () => {
               {item.title}
             </h2>
             <p className="text-[8px] md:text-xs lg:text-md 2xl:text-2xl mb-8 2xl:mb-10">{item.desc}</p>
-            <span className="absolute bottom-2 right-2 2xl:bottom-4 2xl:right-4 bg-secondary px-2 2xl:px-3.5 2xl:py-1.5 py-0.5 rounded-md text-primary font-semibold text-end text-xs md:text-sm 2xl:text-3xl cursor-pointer">
+            <span className="absolute bottom-2 right-2 2xl:bottom-4 2xl:right-4 bg-pink-700 px-2 2xl:px-3.5 2xl:py-1.5 py-0.5 rounded-md text-primary font-semibold text-end text-xs md:text-sm 2xl:text-3xl cursor-pointer">
             +</span> 
           </div>
         ))}

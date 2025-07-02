@@ -9,7 +9,7 @@ const MainSection = () => {
     <div className="flex bg-main h-96 md:min-h-screen items-end justify-center "
     style={{ backgroundImage: `url(${IMG})`, backgroundSize: 'cover', backgroundPosition: 'center', }}>
       <div className="flex flex-col gap-3 2xl:gap-7 p-6 2xl:p-12">
-      <button className="bg-secondary text-primary font-thick p-3  md:p-4 lg:px-14 lg:py-4 2xl:px-24 2xl:py-12 rounded-md 2xl:rounded-2xl  
+      <button className="bg-pink-700 text-primary font-semibold p-3  md:p-4 lg:px-14 lg:py-4 2xl:px-24 2xl:py-12 rounded-md 2xl:rounded-2xl  
       text-xs md:text-sm lg:text-md 2xl:text-4xl hover:cursor-pointer hover:opacity-80">
       Explore Desserts</button>
       <div className="flex justify-center gap-2 md:gap-3 2xl:gap-6 items-center">

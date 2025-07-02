@@ -18,7 +18,7 @@ const NewItemsSection = () => {
       <div className="absolute flex inset-0 bg-gradient-to-b from-secondary to-orange-400/60 opacity-90"></div>
       <div className="w-full relative min-h-screen flex flex-col md:justify-between text-center items-center p-5 md:p-10 2xl:py-20">
       
-       <h2 className="text-xl  md:text-4xl 2xl:text-8xl font-Doppio font-semibold text-transparent bg-clip-text bg-gradient-to-t from-orange-400 to-main  mb-10 p-1 2xl:p-4">
+       <h2 className="text-xl  md:text-4xl 2xl:text-8xl font-Cookie font-semibold text-transparent bg-clip-text bg-gradient-to-t from-orange-400 to-main  mb-10 p-1 2xl:p-4">
         Fresh Bakes – 4 New Cookies to Crave!
         </h2>
 

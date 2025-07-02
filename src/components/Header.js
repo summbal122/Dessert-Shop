@@ -11,7 +11,7 @@ const Header = () => {
     <div className="absolute z-70 top-3 md:top-2 2xl:top-6 w-full">
        <div className="hidden md:block">
         <div className="flex  justify-center">
-          <div className="w-10/12 lg:w-8/12 flex items-center justify-around shadow-2xl bg-primary py-0.5 rounded-md 2xl:rounded-xl">
+          <div className="w-10/12 lg:w-8/12 flex items-center justify-around shadow-2xl bg-primary py-1 rounded-md 2xl:rounded-xl">
             <img className="w-14 2xl:w-36" alt="logo" src={LOGO_IMG}/>
 
             <ul className=" text-purple-text font-Doppio flex gap-4 2xl:gap-8 text-xs lg:text-sm 2xl:text-3xl">
@@ -19,11 +19,11 @@ const Header = () => {
               <li className="hover:cursor-pointer hover:font-semibold">Desserts</li>
               <li className="hover:cursor-pointer hover:font-semibold">Contact</li>
               <li className="hover:cursor-pointer hover:font-semibold">About Us</li>
-              <li className="hover:cursor-pointer hover:font-semibold animate-pulse text-secondary"><Link
+              <li className="hover:cursor-pointer hover:font-semibold animate-pulse text-pink-700"><Link
               smooth={true} duration={800}  
               to="new-items">New!</Link> </li>
             </ul>
-            <i className="fa-solid fa-cart-shopping text-secondary text-lg 2xl:text-4xl hover:cursor-pointer "></i>
+            <i className="fa-solid fa-cart-shopping text-pink-700 text-lg 2xl:text-4xl hover:cursor-pointer "></i>
       </div>
       </div>
     </div>
@@ -35,7 +35,7 @@ const Header = () => {
           
          
             <div className="space-x-3 flex">
-           <i className="fa-solid fa-cart-shopping text-secondary text-lg 2xl:text-3xl"></i>
+           <i className="fa-solid fa-cart-shopping text-pink-700 text-lg 2xl:text-3xl"></i>
             <i
              onClick={() => {
               handleShowOptions();
