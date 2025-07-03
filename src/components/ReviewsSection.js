@@ -1,29 +1,13 @@
 import { useState } from "react";
 import IMG from "../../images/muffin.png";
-
-const reviews = [
-  {
-    name: "Alice",
-    text: "Loving all the desserts, but my most favourite is the strawberry cake!",
-  },
-  {
-    name: "Hamza",
-    text: "Absolutely in love with the chocolate fudge! Will be back for more.",
-  },
-  {
-    name: "Nida",
-    text: "The presentation, the taste, the texture – perfect in every bite.",
-  },
-  {
-    name: "Tariq",
-    text: "A fantastic variety of treats. Everything is fresh and flavorful.",
-  },
-];
+import { useSelector } from "react-redux";
+import lang from "../languageConstants";
 
 const ReviewsSection = () => {
-  const [current, setCurrent] = useState(0);
-
-  const handleNext = () => {
+   const langValue = useSelector(store => store.lang.lang)
+   const [current, setCurrent] = useState(0);
+   const reviews = lang[langValue].reviews;
+   const handleNext = () => {
     setCurrent((prev) => (prev + 1) % reviews.length);
   };
 
@@ -45,7 +29,7 @@ const ReviewsSection = () => {
             alt="Dessert Icon"
             className="w-14 h-14 mx-auto mb-2"
           />
-          <h3 className=" text-lg lg:text-2xl font-Cookie text-pink-700">What People Say</h3>
+          <h3 className=" text-lg lg:text-2xl font-Cookie text-pink-700">{lang[langValue].reviewsTitle}</h3>
           <p className="text-xs lg:text-sm font-Doppio text-purple-text min-h-[100px]">
             “{reviews[current].text}”
           </p>
@@ -69,24 +53,24 @@ const ReviewsSection = () => {
         {/* Write a Review Form */}
         <div className="bg-white rounded-xl shadow-lg p-8 space-y-5 border border-pink-200">
           <h3 className="text-lg lg:text-xl font-semibold text-pink-700 text-center">
-            Write a Review
+            {lang[langValue].writeReview}
           </h3>
           <form className="space-y-4 font-Doppio">
             <div className="flex gap-4">
               <input
                 type="text"
-                placeholder="First Name"
+                placeholder={lang[langValue].firstName}
                 className="w-1/2 border text-xs lg:text-sm border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
               />
               <input
                 type="text"
-                placeholder="Last Name"
+                placeholder={lang[langValue].lastName}
                 className="w-1/2 border border-gray-300 text-xs lg:text-sm rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
               />
             </div>
             <textarea
               rows="4"
-              placeholder="Your Review"
+              placeholder={lang[langValue].reviewPlaceholder}
               className="w-full border border-gray-300 text-xs md:text-sm rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
             ></textarea>
             <div className="text-center">
@@ -94,7 +78,7 @@ const ReviewsSection = () => {
                 type="submit"
                 className="bg-pink-600 text-white px-6 py-2 text-xs lg:text-sm rounded-full hover:bg-pink-700 transition"
               >
-                Submit Review
+               {lang[langValue].submitButton}
               </button>
             </div>
           </form>
