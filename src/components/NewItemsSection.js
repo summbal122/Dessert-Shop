@@ -6,7 +6,7 @@ import COOKIE_FOUR from "../../images/cookie4.png";
 
 const NewItemsSection = () => {
   return (
-    <div  className="relative min-h-screen bg-secondary bg-gradient-to-b from-secondary to-orange-400">
+    <div  className="relative min-h-screen bg-pink-700 bg-gradient-to-b from-pink-700 to-orange-400">
 
       {/* Background Image */}
       <div id="new-items"
@@ -23,10 +23,10 @@ const NewItemsSection = () => {
         </h2>
 
         {/* Cookie Grid */}
-        <div className="grid grid-cols-2 lg:px-20 md:grid-cols-4 xl:grid-cols-4 gap-4 lg:gap-8 text-center ">
+        <div className="grid grid-cols-2 w-11/12 lg:w-9/12  md:grid-cols-4 xl:grid-cols-4 gap-4 lg:gap-8 text-center ">
           {/* Cookie 1 */}
           <div className="relative group bg-white/20 backdrop-blur-sm rounded-xl shadow-lg p-4">
-            <img className=":w-full transition-transform duration-300 group-hover:scale-105" src={COOKIE_ONE} alt="Strawberry Melting Delight" />
+            <img className="w-full transition-transform duration-300 group-hover:scale-105" src={COOKIE_ONE} alt="Strawberry Melting Delight" />
             <div className="absolute inset-0 bg-main/90 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center gap-2 lg:gap-3 p-4 rounded-xl text-black">
               <h3 className="text-xs lg:text-lg 2xl:text-3xl font-bold">Strawberry Melting Delight</h3>
               <p className="text-[8px] lg:text-sm 2xl:text-xl ">
