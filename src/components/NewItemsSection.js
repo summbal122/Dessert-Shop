@@ -17,7 +17,6 @@ const NewItemsSection = () => {
         style={{ backgroundImage: `url(${IMG})` }}
       ></div>
 
-      {/* Gradient Overlay */}
       <div className="absolute flex inset-0 bg-gradient-to-b from-secondary to-orange-400/60 opacity-90"></div>
       <div className="w-full relative min-h-screen flex flex-col md:justify-between text-center items-center p-5 md:p-10 2xl:py-20">
       
@@ -25,8 +24,7 @@ const NewItemsSection = () => {
         {lang[langValue].cookiesHeading}
         </h2>
 
-        {/* Cookie Grid */}
-        <div className="grid grid-cols-2 w-11/12 lg:w-9/12  md:grid-cols-4 xl:grid-cols-4 gap-4 lg:gap-8 text-center ">
+        <div className="grid grid-cols-2 w-9/12 md:w-11/12 lg:w-9/12 2xl:w-11/12  md:grid-cols-4 xl:grid-cols-4 gap-4 lg:gap-8 text-center ">
           {/* Cookie 1 */}
           <div className="relative group bg-white/20 backdrop-blur-sm rounded-xl shadow-lg p-4">
             <img className="w-full transition-transform duration-300 group-hover:scale-105" src={COOKIE_ONE} alt="Strawberry Melting Delight" />
@@ -72,7 +70,7 @@ const NewItemsSection = () => {
           </div>
         </div>
        
-        <p className="p-4 2xl:p-8 text-xs lg:w-3xl 2xl:w-9/12 rounded-md bg-main/80  md:text-lg 2xl:text-4xl mt-10 md:mt-0 text-amber-900 font-Doppio shadow-xl">
+        <p className="p-4 2xl:p-10 text-xs lg:w-3xl 2xl:w-8/12 rounded-md 2xl:rounded-xl bg-main/80  md:text-lg 2xl:text-4xl 2xl:leading-13 mt-10 md:mt-0 text-amber-900 font-Doppio shadow-xl">
         {lang[langValue].cookiesFooter}
         </p>
       </div>

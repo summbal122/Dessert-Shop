@@ -3,6 +3,8 @@ import NewItemsSection from "./NewItemsSection";
 import DessertsSection from "./DessertsSection";
 import OurStorySection from "./OurStorySection";
 import ReviewsSection from "./ReviewsSection";
+
+
 const Body = () => {
   return (
     <div>
@@ -11,8 +13,7 @@ const Body = () => {
       <DessertsSection/>
       <OurStorySection/>
       <ReviewsSection/>
-      
-      
+    
     </div>
   )
 }

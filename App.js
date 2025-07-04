@@ -7,12 +7,10 @@ const App = () => {
   return (
     <main>
       <Provider store={appStore}>
-        <Header/>
-      <Body/>
+       <Header/>
+        <Body/>
       <Footer/> 
-      </Provider>
-
-     
+      </Provider> 
     </main>
   );
 };

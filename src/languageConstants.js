@@ -1,11 +1,15 @@
 const lang = {
   en: {
-    button: "button",
+    button: "Explore Desserts",
+    language: "Language",
     home: "Home",
     desserts: "Desserts",
     contact: "Contact",
     about: "About Us",
     new: "NEW",
+    emptyCart: "Your cart is empty.",
+     cart: "Cart",
+    clearCart: "Clear Cart",
     cookiesHeading: "Fresh Bakes – 4 New Cookies to Crave!",
     cookies: [
       {
@@ -71,12 +75,16 @@ const lang = {
     },
   },
   de: {
-    button: "Knopf",
+    button: "Entdecken Sie Desserts",
     home: "Startseite",
+    language:"Sprache",
     contact: "Kontakt",
     desserts: "Desserts",
     about: "Über uns",
     new: "NEU",
+    emptyCart: "Dein Warenkorb ist leer.",
+    cart: "Warenkorb",
+    clearCart: "Warenkorb leeren",
     cookiesHeading: "Frische Leckereien – 4 neue Cookies zum Verlieben!",
     cookies: [
       {
@@ -143,12 +151,16 @@ const lang = {
 
   },
   fr: {
-    button: "bouton",
+    button: "Découvrez les desserts",
+    language:"Langue",
     home: "Accueil",
     contact: "Contact",
     desserts: "Desserts",
     about: "À propos",
     new: "NOUVEAU",
+    emptyCart: "Votre panier est vide.",
+    cart: "Panier",
+    clearCart: "Vider le panier",
     cookiesHeading: "Pâtisseries fraîches – 4 nouveaux cookies à savourer !",
     cookies: [
       {
