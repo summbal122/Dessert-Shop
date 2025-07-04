@@ -1,4 +1,5 @@
 import D_1 from "../../images/donut.png";
+import D_2 from "../../images/spiral-dessert.png";
 import D_3 from "../../images/cheese-cake.png";
 import D_4 from "../../images/croissant.png";
 import D_5 from "../../images/muffin.png";
@@ -22,7 +23,7 @@ const desserts = [
     },
   },
   {
-    img: D_10,
+    img: D_2,
     price: 5.95,
     translations: {
       en: { title: "Golden Pretzel Swirl", desc: "A masterful blend of bakery craftsmanship and rich flavor with its intricate spiral shape." },

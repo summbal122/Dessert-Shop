@@ -16,7 +16,8 @@ const MainSection = () => {
  }
   return (
  
-    <div className="flex bg-main h-96 md:min-h-screen items-end justify-around"
+    <div id="main"
+     className="flex bg-main h-96 md:min-h-screen items-end justify-around"
     style={{ backgroundImage: `url(${IMG})`, backgroundSize: 'cover', backgroundPosition: 'center', }}>
 
       {/* language selector */}

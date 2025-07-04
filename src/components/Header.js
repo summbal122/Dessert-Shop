@@ -37,7 +37,10 @@ const Header = () => {
           <div className="w-9/12 lg:w-8/12 flex items-center justify-around shadow-2xl bg-primary py-1 rounded-md 2xl:rounded-xl">
             <img className="w-14 2xl:w-36" alt="logo" src={LOGO_IMG} />
             <ul className="text-purple-text font-Doppio flex gap-4 2xl:gap-8 text-xs lg:text-sm 2xl:text-3xl">
-              <li className="hover:cursor-pointer hover:font-semibold">{lang[langValue].home}</li>
+              <li className="hover:cursor-pointer hover:font-semibold">
+                <ScrollLink to="main" smooth={true} duration={800} offset={-100}>
+                    {lang[langValue].home}
+                  </ScrollLink></li>
               <li className="hover:cursor-pointer hover:font-semibold">
                 <ScrollLink to="desserts-section" smooth={true} duration={800} offset={-100}>
                   {lang[langValue].desserts}
@@ -62,7 +65,7 @@ const Header = () => {
             <div onClick={handleShowCart} className="relative hover:cursor-pointer">
               <i className="fa-solid fa-cart-shopping text-pink-700 text-xl 2xl:text-5xl"></i>
               <span className="absolute -bottom-1 -right-2 text-[10px] 2xl:text-lg 2xl:px-2 bg-pink-700 text-primary rounded-full border-1 px-1 py-0.1">
-                {cartItems.reduce((total, item) => total + item.quantity, 0)}
+                {cartItems.reduce((total, item) => total + item.quantity, null)}
               </span>
             </div>
           </div>
@@ -78,17 +81,21 @@ const Header = () => {
 
             <div className="space-x-4 flex items-center">
               <div onClick={handleShowCart} className="relative hover:cursor-pointer">
-                <i className="fa-solid fa-cart-shopping text-pink-700 text-sm"></i>
-                <span className="absolute bottom-0 -right-2 text-[5px] bg-pink-700 text-primary rounded-full border-1 px-1 py-0.5 ">
-                  {cartItems.reduce((total, item) => total + item.quantity, 0)}
+                <i className="fa-solid fa-cart-shopping text-pink-700 text-md"></i>
+                <span className="absolute bottom-0.5 -right-1 text-[7px] bg-pink-700 text-primary rounded-full px-1 ">
+                  {cartItems.reduce((total, item) => total + item.quantity, null)}
                 </span>
               </div>
-              <i onClick={handleShowOptions} className="fa-solid fa-bars text-purple-text text-xs"></i>
+              <i onClick={handleShowOptions} className="fa-solid fa-bars text-purple-text text-sm"></i>
             </div>
 
             {showOptions && (
               <ul className="absolute top-11 right-5 -z-50 bg-primary text-purple-text p-4 rounded-md w-2/6 flex flex-col gap-3 text-xs">
-                <li onClick={handleMobileNavClick} className="hover:cursor-pointer hover:font-semibold">{lang[langValue].home}</li>
+                <li onClick={handleMobileNavClick} className="hover:cursor-pointer hover:font-semibold">
+                  <ScrollLink to="main" smooth={true} duration={800} offset={-100}>
+                    {lang[langValue].home}
+                  </ScrollLink>
+                </li>
                 <li onClick={handleMobileNavClick} className="hover:cursor-pointer hover:font-semibold">
                   <ScrollLink to="desserts-section" smooth={true} duration={800} offset={-100}>
                     {lang[langValue].desserts}
