@@ -74,7 +74,7 @@ const ReviewsSection = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-pink-600 text-white px-6 py-2 text-xs lg:text-sm 2xl:text-xl rounded-full hover:bg-pink-700 transition"
+                className="bg-pink-600 text-white px-6 py-2 text-xs lg:text-sm 2xl:text-xl rounded-full hover:bg-pink-700 transition hover:cursor-pointer"
               >
                {lang[langValue].submitButton}
               </button>

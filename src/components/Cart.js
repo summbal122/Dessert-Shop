@@ -27,7 +27,7 @@ const Cart = () => {
               <img
                 src={item.img}
                 alt={item.translations[langValue].title}
-                className="w-6 md:h-6 lg:w-10 lg:h-12 2xl:h-13 rounded-lg border border-pink-200 object-cover"  />
+                className="w-6 md:h-6 lg:w-7 lg:p-1 lg:h-8 2xl:h-24 2xl:w-18 rounded-lg border border-pink-200 object-cover"  />
               <div className="flex-1 flex flex-col items-start">
                 <span className="font-semibold text-pink-600 text-[7px] md:text-xs 2xl:text-lg">
                   {item.translations[langValue].title}
