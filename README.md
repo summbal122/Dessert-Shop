@@ -1,13 +1,13 @@
-# 🍰 Dessert Shop
+# Dessert Shop
 
 A beautiful, multilingual dessert website built with **React**, **Redux Toolkit**, and **Tailwind CSS**. Explore a sweet collection of desserts with smooth animations, responsive design, and support for English, French, and German languages.
 
-👉 **Live Demo**: [https://dessert-shop-641cc.web.app/](https://dessert-shop-641cc.web.app/)  
-👉 **GitHub Repo**: [https://github.com/summbal122/Dessert-Shop](https://github.com/summbal122/Dessert-Shop)
+**Live Demo**: [https://dessert-shop-641cc.web.app/](https://dessert-shop-641cc.web.app/)  
+**GitHub Repo**: [https://github.com/summbal122/Dessert-Shop](https://github.com/summbal122/Dessert-Shop)
 
 ---
 
-## ✨ Features
+## Features
 
 - 🧁 Multilingual (EN, FR, DE)  
 - 🎨 Responsive UI with Tailwind CSS  
@@ -17,7 +17,7 @@ A beautiful, multilingual dessert website built with **React**, **Redux Toolkit*
 
 ---
 
-## 📸 Previews
+## Previews
 
 ![Main Page](./screenshots/main.png)  
 ![Section 1](./screenshots/section1.png)  
@@ -27,7 +27,7 @@ A beautiful, multilingual dessert website built with **React**, **Redux Toolkit*
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **React**  
 - **Redux Toolkit**  
@@ -38,7 +38,7 @@ A beautiful, multilingual dessert website built with **React**, **Redux Toolkit*
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -55,9 +55,9 @@ npm start
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Sumbal Ijaz**  
 Frontend Developer — React | Redux | Tailwind CSS  
-🔗 [LinkedIn](https://www.linkedin.com/in/sumbal-ijaz-90047925b/)  
-💻 [GitHub](https://github.com/summbal122)  
+[LinkedIn](https://www.linkedin.com/in/sumbal-ijaz-90047925b/)  
+[GitHub](https://github.com/summbal122)  
