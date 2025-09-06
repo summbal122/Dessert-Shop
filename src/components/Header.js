@@ -10,7 +10,6 @@ const Header = () => {
   const [showOptions, setShowOptions] = useState(false);
   const langValue = useSelector((store) => store.lang.lang);
   const cartItems = useSelector((store) => store.cart.cartItems);
-  console.log(LOGO_IMG)
   const handleShowCart = () => {
     setShowCart((prev) => {
       if (!prev) setShowOptions(false); // close menu if opening cart
