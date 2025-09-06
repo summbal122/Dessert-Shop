@@ -1,4 +1,4 @@
-import IMG from "../../images/logo.png"
+import IMG from "../../images/logo.webp"
 import { useSelector } from "react-redux";
 import lang from "../languageConstants";
 
@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Brand Column */}
         <div className="space-y-4">
           <div className="flex items-center justify-center md:justify-start gap-3">
-            <img className="w-10 h-10 2xl:w-17 2xl:h-18" src={IMG} alt="Logo" />
+            <img className="w-10 h-10 2xl:w-17 2xl:h-18" src={IMG} alt="Logo" loading="lazy" />
             <h2 className= "text-xl lg:text-3xl 2xl:text-4xl font-Cookie text-pink-700">Dessert Shop</h2>
           </div> 
           <p className="text-xs lg:text-sm 2xl:text-lg font-Doppio text-gray-600 leading-relaxed">

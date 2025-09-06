@@ -1,4 +1,4 @@
-import IMG from "../../images/chef.png";
+import IMG from "../../images/chef.webp";
 import { useSelector } from "react-redux";
 import lang from "../languageConstants";
 
@@ -7,7 +7,7 @@ const OurStorySection = () => {
   return (
     <section id="about">
     <div className="grid grid-cols-1 md:grid-cols-4  bg-main/80 p-10 px-5 lg:px-20 2xl:px-30 place-items-center ">
-     <img className="w-36 md:w-lg 2xl:w-2xl col-span-2 "   src={IMG}/>
+     <img className="w-36 md:w-lg 2xl:w-2xl col-span-2 "   src={IMG} loading="lazy"/>
       <div className="flex flex-col items-center gap-4 col-span-2">
         <div className="space-y-1 2xl:space-y-5 text-center ">
          <h1 className="text-xl md:ext-4xl 2xl:text-6xl font-bold">

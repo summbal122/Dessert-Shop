@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import languageConst from "../languageConstants"; // ✅ consistent naming
+import languageConst from "../languageConstants"; 
 import { addItem } from "../utils/cartSlice";
 
 export const DessertComponent = ({ data }) => {
@@ -15,8 +15,7 @@ export const DessertComponent = ({ data }) => {
       {data.map((item, index) => (
         <div
           key={index}
-          className="relative bg-light-blue h-55 md:h-72 2xl:h-130 py-4 lg:py-2 px-1 lg:p-4 2xl:p-8 rounded-xl text-center place-items-center shadow-xl"
-        >
+          className="relative bg-light-blue h-55 md:h-72 2xl:h-130 py-4 lg:py-2 px-1 lg:p-4 2xl:p-8 rounded-xl text-center place-items-center shadow-xl"   >
           {/* Badge */}
           {item.newLabel && (
             <span className="absolute top-2 left-2 bg-purple-text text-white text-[8px] md:text-xs lg:text-sm 2xl:text-lg px-2 py-0.5 rounded-md z-10 animate-pulse">
@@ -49,10 +48,10 @@ export const DessertComponent = ({ data }) => {
   );
 };
 
-// ✅ HOC to add "newLabel" property
-const withNewBadge = (WrappedComponent) => {
+// HOC to add new label
+const withNewBadge = (WrappedComponent) => { // camel Case
   return ({ data }) => {
-    const updatedData = data.map((item) => ({
+    const updatedData = data.map((item) => ({ //wrapped component Pascal Case
       ...item,
       newLabel: item.type === "new",
     }));

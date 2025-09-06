@@ -13,7 +13,6 @@ const Body = () => {
       <DessertsSection/>
       <OurStorySection/>
       <ReviewsSection/>
-    
     </div>
   )
 }

@@ -11,7 +11,8 @@ const Cart = () => {
     dispatch(clearItems())
   }
   return (
-    <div className="w-5/8 md:w-5/12 lg:w-4/12 2xl:w-3/12 border border-pink-200 bg-main/98 absolute top-11 md:top-17 lg:top-18 2xl:top-40 right-24 md:right-24 lg:right-45 z-80 shadow-xl rounded-md 2xl:rounded-xl p-1  py-3 md:p-3 lg:p-5 2xl:p-8 ">
+    <div aria-label="Shopping cart"
+     role="region"  className="w-5/8 md:w-5/12 lg:w-4/12 2xl:w-3/12 border border-pink-200 bg-main/98 absolute top-11 md:top-17 lg:top-18 2xl:top-40 right-24 md:right-24 lg:right-45 z-80 shadow-xl rounded-md 2xl:rounded-xl p-1  py-3 md:p-3 lg:p-5 2xl:p-8 ">
       <h1 className="text-xs md:text-lg lg:text-2xl 2xl:text-4xl font-Cookie text-pink-700 mb-2 md:mb-4 text-center">{lang[langValue].cart}</h1>
 
       {cartItems.length === 0 ? (
@@ -27,7 +28,7 @@ const Cart = () => {
               <img
                 src={item.img}
                 alt={item.translations[langValue].title}
-                className="w-6 md:h-6 lg:w-7 lg:p-1 lg:h-8 2xl:h-24 2xl:w-18 rounded-lg border border-pink-200 object-cover"  />
+                className="w-6 md:h-6 lg:w-7 lg:p-1 lg:h-8 2xl:h-24 2xl:w-18` rounded-lg border border-pink-200 object-cover"  />
               <div className="flex-1 flex flex-col items-start">
                 <span className="font-semibold text-pink-600 text-[7px] md:text-xs 2xl:text-lg">
                   {item.translations[langValue].title}
@@ -39,12 +40,14 @@ const Cart = () => {
              
               <div className="flex items-center gap-1 md:gap-2">
                 <button
+                  aria-label={`Decrease quantity of ${item.translations[langValue].title}`}
                   onClick={() => dispatch(decreaseQty(item))}
                   className="px-1 md:px-2 md:py-0.5 lg:py-0 bg-pink-100 hover:bg-pink-200 text-pink-700 text-[10px] md:text-xs lg:text-md 2xl:text-2xl rounded"  >
                   −
                 </button>
                 <span className="text-[8px] md:text-xs 2xl:text-xl font-bold">{item.quantity}</span>
                 <button
+                   aria-label={`Increase quantity of ${item.translations[langValue].title}`}
                   onClick={() => dispatch(increaseQty(item))}
                   className="px-1 md:px-2 md:py-0.5 lg:py-0 bg-pink-100 hover:bg-pink-200 text-pink-700 text-[10px] md:text-xs lg:text-md 2xl:text-2xl rounded" >
                   +
@@ -55,10 +58,13 @@ const Cart = () => {
         </ul>
       )}
       {cartItems.length> 0 && (
-      <h2
+      <button
       onClick={() => {
         handleClearCart();
-      }} className="text-pink-700 text-[10px] md:text-xs 2xl:text-xl hover:underline text-center mt-2">{lang[langValue].clearCart}</h2> )}
+      
+      }} 
+        aria-label="Clear all items from cart" className="text-pink-700 text-[10px] md:text-xs 2xl:text-xl hover:underline text-center mt-2">{lang[langValue].clearCart}
+      </button> )}
 
     </div>
   );

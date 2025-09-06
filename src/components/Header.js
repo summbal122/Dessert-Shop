@@ -1,5 +1,5 @@
 import { Link as ScrollLink } from "react-scroll";
-import LOGO_IMG from "../../images/logo.png";
+import LOGO_IMG from "../../images/logo.webp";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import lang from "../languageConstants";
@@ -10,7 +10,7 @@ const Header = () => {
   const [showOptions, setShowOptions] = useState(false);
   const langValue = useSelector((store) => store.lang.lang);
   const cartItems = useSelector((store) => store.cart.cartItems);
-
+  console.log(LOGO_IMG)
   const handleShowCart = () => {
     setShowCart((prev) => {
       if (!prev) setShowOptions(false); // close menu if opening cart
@@ -35,7 +35,7 @@ const Header = () => {
       <div className="hidden md:block">
         <div className="flex justify-center">
           <div className="w-9/12 lg:w-8/12 flex items-center justify-around shadow-2xl bg-primary py-1 rounded-md 2xl:rounded-xl">
-            <img className="w-14 2xl:w-36" alt="logo" src={LOGO_IMG} />
+            <img className="w-14 2xl:w-36" alt="logo" src={LOGO_IMG} width={100} height={100} />
             <ul className="text-purple-text font-Doppio flex gap-4 2xl:gap-8 text-xs lg:text-sm 2xl:text-3xl">
               <li className="hover:cursor-pointer hover:font-semibold">
                 <ScrollLink to="main" smooth={true} duration={800} offset={-100}>

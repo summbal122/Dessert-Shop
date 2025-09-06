@@ -1,17 +1,17 @@
 import D_1 from "../../images/donut.png";
 import D_2 from "../../images/spiral-dessert.png";
-import D_3 from "../../images/cheese-cake.png";
+import D_3 from "../../images/cheese-cake.webp";
 import D_4 from "../../images/croissant.png";
 import D_5 from "../../images/muffin.png";
 import D_6 from "../../images/pie.png";
 import D_7 from "../../images/lemon-tart.png";
-import D_8 from "../../images/chocolate-cupcake.png";
-import D_9 from "../../images/cherry-cheese.png";
+import D_8 from "../../images/chocolate-cupcake.webp";
+import D_9 from "../../images/cherry-cheese.webp";
 import D_10 from "../../images/Strawberry-cupcake.png";
-import D_11 from "../../images/cookie1.png";
-import D_12 from "../../images/cookie2.png";
-import D_13 from "../../images/cookie3.png";
-import D_14 from "../../images/cookie4.png";
+import D_11 from "../../images/cookie1.webp";
+import D_12 from "../../images/cookie2.webp";
+import D_13 from "../../images/cookie3.webp";
+import D_14 from "../../images/cookie4.webp";
 const desserts = [
   {
     img: D_1,
