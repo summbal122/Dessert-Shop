@@ -42,7 +42,8 @@ A beautiful, multilingual dessert website built with **React**, **Redux Toolkit*
 
 ### Prerequisites
 
-- Node.js (v14+) and npm installed
+- Node.js **>=18.x** (developed and tested with Node v22.14.0)  
+- npm **>=9.x**
 
 ### Installation
 
