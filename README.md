@@ -9,11 +9,11 @@ A beautiful, multilingual dessert website built with **React**, **Redux Toolkit*
 
 ## Features
 
-- 🧁 Multilingual (EN, FR, DE)  
-- 🎨 Responsive UI with Tailwind CSS  
-- ⚙️ State management with Redux Toolkit  
-- 🚀 Hosted on Firebase  
-- 📱 Mobile-friendly design  
+- Multilingual (EN, FR, DE)  
+- Responsive UI with Tailwind CSS  
+- State management with Redux Toolkit  
+- Hosted on Firebase  
+- Mobile-friendly design  
 
 ---
 
